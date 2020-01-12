@@ -23,7 +23,11 @@ const Logo = React.memo<Logo>(function Logo({ ...other }) {
 
   return (
     <Anchor href="/">
-      <img className={classes.image} src="/static/uploads/logo-3.jpg" alt="xiangshang-lot-logo" />
+      <img
+        className={classes.image}
+        src="/static/uploads/logo-black.jpg"
+        alt="xiangshang-lot-logo"
+      />
     </Anchor>
   );
 });

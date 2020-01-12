@@ -44,7 +44,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
     <MuiThemeProvider theme={theme}>
       <CssBaseline />
       <AppBar color="inherit" position="static">
-        <Toolbar variant="dense">
+        <Toolbar>
           <Hidden lgUp implementation="css">
             <IconButton onClick={toggle}>
               <MenuIcon />
