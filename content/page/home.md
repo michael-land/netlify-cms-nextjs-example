@@ -4,45 +4,17 @@ notification: >-
   Please contact our Studio Operaions group for availability, rates and to
   schedule a scout
 section1:
+  title: Labore amet ullamco Pariatur dolor amet eu anim
   description: >-
-    _Dolore_ proident officia voluptate consectetur duis Lorem adipisicing minim
-    dolore qui duis est est.Sunt adipisicing do proident irure xcepteur pariatur
-    et occaecat sint cillum elit.Reprehenderit eu iquip irure dolore tempor
-    mollit cillum labore mollit. **Commodo** sint aliquip occaecat Lorem est
-    culpa.
-
-
-    Eu consectetur officia consequat Lorem anim id occaecat aliquip. Nostrud
-    nulla aliquip mollit laborum quis consectetur veniam exercitation pariatur
-    consequat sint anim.Ipsum dolor velit laborum nim non qui minim ut aute.Aute
-    est officia voluptate adipisicing irure mollit ea pariatur ullamco sit
-    aliquip et velit.reprehenderit.
-
-
-
-
-    * 1
-
-    * 2
-
-    * 3
-
-
-    > some thing else
-  description2: >-
     Dolore proident officia voluptate consectetur duis Lorem adipisicing minim
     dolore qui duis est est.Sunt adipisicing do proident irure xcepteur pariatur
     et occaecat sint cillum elit.Reprehenderit eu iquip irure dolore tempor
     mollit cillum labore mollit.Commodo sint aliquip occaecat Lorem est culpa.
-
-
-
     Eu consectetur officia consequat Lorem anim id occaecat aliquip. Nostrud
     nulla aliquip mollit laborum quis consectetur veniam exercitation pariatur
     consequat sint anim.Ipsum dolor velit laborum nim non qui minim ut aute.Aute
     est officia voluptate adipisicing irure mollit ea pariatur ullamco sit
     aliquip et velit.reprehenderit.
-  title: Labore amet ullamco Pariatur dolor amet eu anim
 news:
   - description: >-
       Occaecati eveniet ad voluptas officiis beatae. Nihil culpa nemo et itaque
@@ -79,4 +51,3 @@ articles:
     readmore: /events
     title: District Research Facilitator
 ---
-
