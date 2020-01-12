@@ -58,8 +58,9 @@ sections:
       Candidate Privacy Policy.
 
 
-      Email cover letter & resumes to
-      [admin@xgslot.com](email-to:admin@xgslot.com) or apply on
+
+
+      Email cover letter & resumes to <mailto:admin@xgslot.com> or apply on
       [LinkedIn](https://ec.linkedin.com/company/xiangshan-global-studios)
     title: CAREERS
 ---
