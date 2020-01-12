@@ -4,17 +4,36 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "4.8.3",
+    "@material-ui/icons": "4.5.1",
+    "@material-ui/lab": "4.0.0-alpha.39",
+    "@types/nprogress": "^0.2.0",
+    "date-fns": "2.9.0",
+    "immer": "5.2.1",
     "next": "^9.1.7",
+    "nprogress": "^0.2.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-table": "7.0.0-rc.15",
+    "react-use": "13.14.3",
+    "use-immer": "0.3.5"
   },
   "devDependencies": {
-    "frontmatter-markdown-loader": "^3.1.0"
+    "@types/next": "^9.0.0",
+    "@types/node": "^13.1.6",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "frontmatter-markdown-loader": "^3.1.0",
+    "type-fest": "^0.8.1",
+    "typescript": "^3.7.4"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
     "export": "npm run build && next export"
+  },
+  "prettier": {
+    "printWidth": 100
   }
 }

@@ -1,10 +1,16 @@
+const path = require("path");
+
 module.exports = {
-  webpack: cfg => {
-    cfg.module.rules.push({
+  webpack: config => {
+    config.resolve.alias["@"] = path.join(__dirname, "src");
+
+    config.node = { fs: "empty" };
+
+    config.module.rules.push({
       test: /\.md$/,
       loader: "frontmatter-markdown-loader",
       options: { mode: ["react-component"] }
     });
-    return cfg;
+    return config;
   }
 };
