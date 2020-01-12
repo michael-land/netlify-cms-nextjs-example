@@ -19,7 +19,7 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "markdown" }
-              - { label: "Description2", name: "description", widget: "text" }
+              - { label: "Description2", name: "description2", widget: "text" }
           - label: "News"
             name: "news"
             widget: list
