@@ -18,7 +18,8 @@ collections:
             widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "list" }
+              - { label: "Description", name: "description", widget: "markdown" }
+              - { label: "Description2", name: "description", widget: "text" }
           - label: "News"
             name: "news"
             widget: list
