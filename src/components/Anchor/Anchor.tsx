@@ -19,7 +19,7 @@ const Anchor = React.forwardRef<HTMLAnchorElement, Anchor>(function Anchor(props
   return isInternal ? (
     <MuiLink {...props} component={InternalLink} ref={ref} />
   ) : (
-    <MuiLink {...props} ref={ref} target={target} underline="none" />
+    <MuiLink {...props} ref={ref} target={target} underline={props.underline || "none"} />
   );
 });
 

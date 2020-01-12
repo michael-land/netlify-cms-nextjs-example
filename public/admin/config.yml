@@ -21,13 +21,13 @@ collections:
             widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Description", name: "description", widget: "markdown" }
           - label: "News"
             name: "news"
             widget: list
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Description", name: "description", widget: "markdown" }
               - { label: "Image", name: "image", widget: "image" }
           - label: "Articles"
             name: "articles"
@@ -35,7 +35,7 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "ReadMoreLink", name: "readmore", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Description", name: "description", widget: "markdown" }
               - { label: "Image", name: "image", widget: "image" }
       - label: "About Page"
         name: "about"
@@ -48,4 +48,4 @@ collections:
             widget: list
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Description", name: "description", widget: "markdown" }
