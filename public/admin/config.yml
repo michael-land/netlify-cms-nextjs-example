@@ -3,11 +3,12 @@ backend:
   branch: master
 media_folder: public/img
 public_folder: img
-editor:
-  preview: false
+
 collections:
   - name: "pages"
     label: "Pages"
+    editor:
+      preview: false
     files:
       - label: "Home Page"
         name: "home"
@@ -36,3 +37,15 @@ collections:
               - { label: "ReadMoreLink", name: "readmore", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Image", name: "image", widget: "image" }
+      - label: "About Page"
+        name: "about"
+        file: "content/page/about.md"
+        fields:
+          - { label: "Title", name: "heroImage", widget: "image" }
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - label: "Sections"
+            name: "sections"
+            widget: list
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }

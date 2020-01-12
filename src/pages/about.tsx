@@ -6,7 +6,7 @@ import { attributes } from "../../content/page/about.md";
 export default function AboutUsPage() {
   return (
     <>
-      <Hero anchor="center" image={attributes.hero}>
+      <Hero anchor="center" image={attributes.heroImage}>
         <Box color="white" textAlign="center">
           <Typography variant="h2" color="inherit" paragraph>
             {attributes.title}
@@ -20,7 +20,7 @@ export default function AboutUsPage() {
               <Typography variant="h4" component="h1" gutterBottom>
                 {section.title}
               </Typography>
-              <Typography>{section.body}</Typography>
+              <Typography>{section.description}</Typography>
             </Container>
           </Box>
         ))}
