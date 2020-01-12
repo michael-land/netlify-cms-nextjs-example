@@ -8,10 +8,12 @@ sections:
       two ports.
 
 
-      - Fishing is the leading industry in Xiangshan, alongside the film &
+
+
+      * Fishing is the leading industry in Xiangshan, alongside the film &
       television industry.
 
-      - 1,382 km² or 341,506 acres land area with 549,000 population
+      * 1,382 km² or 341,506 acres land area with 549,000 population
 
 
       Subtropical monsoon climate zone provides long summers and warm winters in
@@ -54,6 +56,11 @@ sections:
       your privacy seriously and any personal data you provide to us in relation
       to your application will be processed and stored in accordance with our
       Candidate Privacy Policy.
+
+
+      Email cover letter & resumes to
+      [admin@xgslot.com](email-to:admin@xgslot.com) or apply on
+      [LinkedIn](https://ec.linkedin.com/company/xiangshan-global-studios)
     title: CAREERS
 ---
 
