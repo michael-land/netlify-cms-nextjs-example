@@ -6,6 +6,7 @@ export const attributes: {
   section1: {
     title: strig;
     description: string;
+    description2: string;
   };
   news: Array<{
     content: string;

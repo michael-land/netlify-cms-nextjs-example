@@ -27,7 +27,13 @@ const HomePage = React.memo<HomePage>(function HomePage({ ...other }) {
             </Typography>
           </Box>
 
-          <Typography paragraph>{attributes.section1.description}</Typography>
+          {attributes.section1.description.split("\n").map(fragment => (
+            <Typography paragraph>{fragment}</Typography>
+          ))}
+
+          {attributes.section1.description2.split("\n").map(fragment => (
+            <Typography paragraph>{fragment}</Typography>
+          ))}
         </Container>
       </Box>
 
