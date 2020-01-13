@@ -1,8 +1,7 @@
 ---
 heroImage: /static/uploads/republic-of-china-2.jpg
 notification: >-
-  Please contact our Studio Operaions group for availability, rates and to
-  schedule a scout
+  Please contact our Studio Operations Group for availability, rates and to schedule a scout
 section1:
   description: >-
     Dolore proident officia voluptate consectetur duis Lorem adipisicing minim
@@ -53,4 +52,3 @@ articles:
     readmore: /events
     title: District Research Facilitator
 ---
-

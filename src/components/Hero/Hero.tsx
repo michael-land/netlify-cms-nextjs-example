@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
   },
   image: {
     backgroundColor: "#222",
-    height: "calc(100vh - 64px - 48px)",
+    height: "calc(100vh - 64px - 64px)",
     [theme.breakpoints.down("md")]: {
       height: "calc(100vh - 64px)"
     },

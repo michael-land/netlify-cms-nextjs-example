@@ -5,3 +5,5 @@ export { default as Section } from "./Section";
 export { default as Card2 } from "./Card2";
 export { default as Card1 } from "./Card1";
 export { default as Hero } from "./Hero";
+export { default as Markdown } from "./Markdown";
+export { default as DataTable } from "./DataTable";

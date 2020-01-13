@@ -49,3 +49,16 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "markdown" }
+      - label: "Incentives Page"
+        name: "incentives"
+        file: "content/page/incentives.md"
+        fields:
+          - { label: "Title", name: "heroImage", widget: "image" }
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - { label: "Description", name: "description", widget: "markdown" }
+          - label: "Contacts"
+            name: "contacts"
+            widget: list
+            fields:
+              - { label: "Type", name: "type", widget: "string" }
+              - { label: "Values", name: "values", widget: "list" }

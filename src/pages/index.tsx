@@ -1,10 +1,8 @@
 import { Card1, Card2, Hero, Section } from "@/components";
+import Markdown from "@/components/Markdown";
 import { Box, Container, Grid, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 import { attributes } from "../../content/page/home.md";
-import { Head } from "next/document";
-console.log(attributes);
-const useStyles = makeStyles(theme => ({}));
 
 interface HomePage {}
 
@@ -27,13 +25,7 @@ const HomePage = React.memo<HomePage>(function HomePage({ ...other }) {
             </Typography>
           </Box>
 
-          {attributes.section1.description.split("\n").map(fragment => (
-            <Typography paragraph>{fragment}</Typography>
-          ))}
-
-          {attributes.section1.description2.split("\n").map(fragment => (
-            <Typography paragraph>{fragment}</Typography>
-          ))}
+          <Markdown>{attributes.section1.description}</Markdown>
         </Container>
       </Box>
 
