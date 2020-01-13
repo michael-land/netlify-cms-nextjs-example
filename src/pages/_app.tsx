@@ -1,4 +1,4 @@
-import { Anchor, Logo } from "@/components";
+import { Anchor } from "@/components";
 import routes from "@/routes";
 import theme from "@/theme";
 import { GenericProps } from "@/type";
@@ -17,6 +17,7 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 import { AppProps } from "next/app";
 import Router from "next/router";
+import { SnackbarProvider } from "notistack";
 import nprogress from "nprogress";
 import React from "react";
 import { useBoolean } from "react-use";
@@ -183,9 +184,11 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <MuiThemeProvider theme={theme}>
       <CssBaseline />
-      <Root>
-        <Component {...pageProps} />
-      </Root>
+      <SnackbarProvider>
+        <Root>
+          <Component {...pageProps} />
+        </Root>
+      </SnackbarProvider>
     </MuiThemeProvider>
   );
 };

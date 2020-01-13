@@ -1,15 +1,15 @@
-import { Views } from "@/views";
+import { Template } from "@/template";
 import React from "react";
 import { attributes } from "../../content/page/incentives.md";
 
-interface Incentives {}
+interface IncentivesPage {}
 
-const Incentives = React.memo<Incentives>(function Incentives({ ...other }) {
+const IncentivesPage = React.memo<IncentivesPage>(function IncentivesPage({ ...other }) {
   return (
-    <Views.Detail {...attributes}>
+    <Template.WithContacts {...attributes}>
       <div />
-    </Views.Detail>
+    </Template.WithContacts>
   );
 });
 
-export default Incentives;
+export default IncentivesPage;

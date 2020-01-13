@@ -1,12 +1,55 @@
-import { Card1, Card2, Hero, Section } from "@/components";
+import { Card1, Card2, Hero, Section, Carousel, ChipArray } from "@/components";
 import Markdown from "@/components/Markdown";
-import { Box, Container, Grid, makeStyles, Typography } from "@material-ui/core";
+import { Box, Container, Grid, makeStyles, Typography, Paper, Chip } from "@material-ui/core";
 import React from "react";
 import { attributes } from "../../content/page/home.md";
 
 interface HomePage {}
 
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+    display: "flex",
+    flexDirection: "column",
+    position: "relative"
+  },
+
+  img: {
+    width: "100%",
+    display: "block",
+    overflow: "hidden",
+    zIndex: -1,
+    borderRadius: 8,
+    boxShadow: theme.shadows[4],
+    userSelect: "none",
+    pointerEvents: "none"
+  },
+  stepper: {
+    position: "relative",
+    top: -32,
+    backgroundColor: "transparent"
+  },
+  buttonsContainer: {
+    position: "absolute",
+    height: "100%",
+    width: "100%"
+  },
+  buttons: {
+    display: "flex",
+    justifyContent: "space-between",
+    height: "100%",
+    alignItems: "center"
+  },
+  button: {
+    backgroundColor: "rgba(0, 0, 0, 0.1)",
+    color: "white",
+    margin: "0 8px"
+  }
+}));
+
 const HomePage = React.memo<HomePage>(function HomePage({ ...other }) {
+  const classes = useStyles();
+
   return (
     <>
       <Hero anchor="bottom" image={attributes.heroImage}>
@@ -51,6 +94,77 @@ const HomePage = React.memo<HomePage>(function HomePage({ ...other }) {
               />
             </Box>
           ))}
+        </Section>
+      </Container>
+      <Container maxWidth="md">
+        <Section title="ON THE LOT">
+          <Box my={10}>
+            <Typography>
+              Our stages have hosted many of history’s most beloved, award-winning movie
+              blockbusters and TV hits. Today, movie and television talent continues to come to
+              Paramount from around the world to create their celebrated productions. The people you
+              will see passing by on bicycles, enjoying lunch at the Café, or reviewing scripts in
+              Production Park, are the same talent, producers, and crew from these productions. Look
+              below to see who currently calls Paramount their home.
+            </Typography>
+          </Box>
+          <Carousel>
+            {attributes.onTheLots.map((item, index) => (
+              <Grid container key={item.title} alignItems="center">
+                <Grid item xs={12} md={6}>
+                  <img className={classes.img} src={item.image} alt={item.title} />
+                </Grid>
+                <Grid item xs={12} md={6} style={{ zIndex: 99999 }}>
+                  <Box p={4}>
+                    <Typography variant="h4" gutterBottom>
+                      {item.title}
+                    </Typography>
+                    <Typography gutterBottom>{item.description}</Typography>
+                    <Box my={2}>
+                      <Typography variant="subtitle2" gutterBottom>
+                        Stars
+                      </Typography>
+                      <ChipArray>
+                        {item.stars.map(star => (
+                          <Chip key={star} label={star} size="small" />
+                        ))}
+                      </ChipArray>
+                    </Box>
+                  </Box>
+                </Grid>
+              </Grid>
+            ))}
+          </Carousel>
+        </Section>
+
+        <Section title="PAST PRODUCTIONS">
+          <Carousel>
+            {attributes.onTheLots.map((item, index) => (
+              <Grid container key={item.title} alignItems="center">
+                <Grid item xs={12} md={6}>
+                  <img className={classes.img} src={item.image} alt={item.title} />
+                </Grid>
+                <Grid item xs={12} md={6} style={{ zIndex: 99999 }}>
+                  <Box p={4}>
+                    <Typography variant="h4" gutterBottom>
+                      {item.title}
+                    </Typography>
+                    <Typography gutterBottom>{item.description}</Typography>
+                    <Box my={2}>
+                      <Typography variant="subtitle2" gutterBottom>
+                        Stars
+                      </Typography>
+                      <ChipArray>
+                        {item.stars.map(star => (
+                          <Chip key={star} label={star} size="small" />
+                        ))}
+                      </ChipArray>
+                    </Box>
+                  </Box>
+                </Grid>
+              </Grid>
+            ))}
+          </Carousel>
         </Section>
       </Container>
     </>

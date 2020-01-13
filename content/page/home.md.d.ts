@@ -19,4 +19,11 @@ export const attributes: {
     image: string;
     title: string;
   }>;
+  onTheLots: Array<{
+    title: string;
+    description: string;
+    image: string;
+    stars: string[];
+    extra: { title: string; description: string }[];
+  }>;
 };

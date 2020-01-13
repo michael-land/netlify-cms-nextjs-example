@@ -1,7 +1,7 @@
 import { Anchor, DataTable } from "@/components";
+import { Template } from "@/template";
 import { makeData } from "@/utils";
-import { Views } from "@/views";
-import { Box, Button, Toolbar, Typography } from "@material-ui/core";
+import { Box, Button, Container, Toolbar, Typography } from "@material-ui/core";
 import CheckIcon from "@material-ui/icons/Check";
 import React from "react";
 import { attributes } from "../../content/page/stages.md";
@@ -69,25 +69,29 @@ const columns: DataTable["columns"] = [
 
 const Stages = React.memo<Stages>(function Stages({ ...other }) {
   return (
-    <Views.Detail {...attributes}>
-      <Toolbar>
-        <Button style={{ marginLeft: "auto" }} variant="contained" color="primary">
-          Download Complete Chart
-        </Button>
-      </Toolbar>
-      <Box my={8}>
-        <Typography variant="h4">SOUND STAGE CHART</Typography>
+    <Template.WithContacts {...attributes}>
+      <Box my={12}>
+        <Container>
+          <Toolbar>
+            <Button style={{ marginLeft: "auto" }} variant="contained" color="primary">
+              Download Complete Chart
+            </Button>
+          </Toolbar>
+          <Box my={8}>
+            <Typography variant="h4">SOUND STAGE CHART</Typography>
+          </Box>
+          <DataTable columns={columns} data={data} />
+          <Box my={8}>
+            <Typography variant="h4">RANCH CHART</Typography>
+          </Box>
+          <DataTable columns={columns} data={data} />
+          <Box my={8}>
+            <Typography variant="h4">RANCH CHART 2</Typography>
+          </Box>
+          <DataTable columns={columns} data={data} />
+        </Container>
       </Box>
-      <DataTable columns={columns} data={data} />
-      <Box my={8}>
-        <Typography variant="h4">RANCH CHART</Typography>
-      </Box>
-      <DataTable columns={columns} data={data} />
-      <Box my={8}>
-        <Typography variant="h4">RANCH CHART 2</Typography>
-      </Box>
-      <DataTable columns={columns} data={data} />
-    </Views.Detail>
+    </Template.WithContacts>
   );
 });
 

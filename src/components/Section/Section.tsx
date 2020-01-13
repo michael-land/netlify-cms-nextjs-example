@@ -19,9 +19,9 @@ const Section = React.memo<Section>(function Section({
   return (
     <Box {...other}>
       {(title || subtitle) && (
-        <Box py={6}>
+        <Box my={6}>
           {title && (
-            <Typography variant="h4" align="center">
+            <Typography variant="h3" align="center">
               {title}
             </Typography>
           )}

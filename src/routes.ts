@@ -59,7 +59,7 @@ const routes: Route[] = [
   },
   {
     title: "Contact",
-    href: "/contact"
+    href: "/contact-us"
   }
 ];
 export default routes;

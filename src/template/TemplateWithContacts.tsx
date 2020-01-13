@@ -16,7 +16,7 @@ import React from "react";
 const useStyles = makeStyles(theme => ({
   title: {
     textTransform: "uppercase",
-    marginBottom: 16,
+    marginBottom: 48,
     marginTop: 48
   },
   iconButton: {
@@ -46,13 +46,13 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-interface DetailView extends GenericProps {
+interface TemplateWithContacts extends GenericProps {
   heroImage: string;
   sections: { title: string; description: string }[];
   contacts: { type: string; values: { value: string }[] }[];
 }
 
-const DetailView = React.memo<DetailView>(function DetailView({
+const TemplateWithContacts = React.memo<TemplateWithContacts>(function TemplateWithContacts({
   sections,
   heroImage,
   contacts,
@@ -110,11 +110,9 @@ const DetailView = React.memo<DetailView>(function DetailView({
           </Grid>
         </Grid>
       </Container>
-      <Container>
-        <Box py={8}> {children}</Box>
-      </Container>
+      {children}
     </React.Fragment>
   );
 });
 
-export default DetailView;
+export default TemplateWithContacts;

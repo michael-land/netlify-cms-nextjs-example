@@ -51,4 +51,18 @@ articles:
     image: /static/uploads/republic-of-china-12.jpg
     readmore: /events
     title: District Research Facilitator
+onTheLots:
+  - title: The Doctors
+    image: http://www.paramountstudios.com/images/the_drs.png?crc=3829510893
+    stars: ["Travis Stork", "Andrew Ordon", "Jim Sears"]
+    extra:
+      - title: production
+        content: CBS Television Distribution,ﾠ Stage 29 Productions
+    description: >-
+      A team of medical professionals discuss a range of various health-related topics and answer questions from viewers who are too embarrassed to ask their own doctors.
+  - title: The Blacklist
+    image: http://www.paramountstudios.com/images/show_dr_phil.jpg?crc=373528081
+    stars: ["James Spader", "Megan Boone", ﾠ "Diego Klattenhoff"]
+    description: >-
+      Elizabeth 'Liz' Keen, a new FBI profiler has her entire life uprooted when a mysterious criminal, Raymond Reddington, on the FBI's Top Ten Most Wanted List turns himself in and insists on speaking to her.
 ---
