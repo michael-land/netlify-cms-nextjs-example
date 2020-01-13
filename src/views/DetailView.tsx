@@ -53,7 +53,7 @@ interface DetailView extends GenericProps {
   heroImage: string;
   title: string;
   description: string;
-  contacts: { type: string; values: string[] }[];
+  contacts: { type: string; values: { value: string }[] }[];
 }
 
 const DetailView = React.memo<DetailView>(function DetailView({
@@ -85,7 +85,7 @@ const DetailView = React.memo<DetailView>(function DetailView({
             <div>
               {contacts.map(contact => (
                 <div className={classes.contactItem}>
-                  {contact.values.map((value, index) => (
+                  {contact.values.map(({ value }, index) => (
                     <div style={{ display: "flex" }}>
                       <Typography
                         className={clsx(classes.contactType, {

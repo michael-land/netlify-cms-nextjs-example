@@ -8,16 +8,16 @@ description: >-
 contacts:
   - type: phone
     values:
-      - +86 150.3832.5566 Main Line
-      - +1 310.801.1902  Hollywood Rep.
+      - value: +86 150.3832.5566 Main Line
+      - value: +1 310.801.1902  Hollywood Rep.
   - type: hours
     values:
-      - M-F, 9AM-5PM (International Division)
+      - value: M-F, 9AM-5PM (International Division)
   - type: address
     values:
-      - Ningbo Screen Industrual Park
-      - Xinqiao, Xiangshan, Ningbo, Zhejiang 315726, P.R.C.
+      - value: Ningbo Screen Industrual Park
+      - value: Xinqiao, Xiangshan, Ningbo, Zhejiang 315726, P.R.C.
   - type: email
     values:
-      - info@xgslot.com
+      - value: info@xgslot.com
 ---

@@ -5,60 +5,63 @@ media_folder: public/img
 public_folder: img
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: pages
+    label: Pages
     editor:
       preview: false
     files:
-      - label: "Home Page"
-        name: "home"
-        file: "content/page/home.md"
+      - label: Home Page
+        name: home
+        file: content/page/home.md
         fields:
-          - { label: "Hero Image", name: "heroImage", widget: "image" }
-          - { label: "Notification", name: "notification", widget: "string" }
-          - label: "Section1"
-            name: "section1"
-            widget: "object"
+          - { label: Hero Image, name: heroImage, widget: image }
+          - { label: Notification, name: notification, widget: string }
+          - label: Section1
+            name: section1
+            widget: object
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "markdown" }
-          - label: "News"
-            name: "news"
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: markdown }
+          - label: News
+            name: news
             widget: list
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "markdown" }
-              - { label: "Image", name: "image", widget: "image" }
-          - label: "Articles"
-            name: "articles"
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: markdown }
+              - { label: Image, name: image, widget: image }
+          - label: Articles
+            name: articles
             widget: list
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "ReadMoreLink", name: "readmore", widget: "string" }
-              - { label: "Description", name: "description", widget: "markdown" }
-              - { label: "Image", name: "image", widget: "image" }
-      - label: "About Page"
-        name: "about"
-        file: "content/page/about.md"
+              - { label: Title, name: title, widget: string }
+              - { label: ReadMoreLink, name: readmore, widget: string }
+              - { label: Description, name: description, widget: markdown }
+              - { label: Image, name: image, widget: image }
+      - label: About Page
+        name: about
+        file: content/page/about.md
         fields:
-          - { label: "Title", name: "heroImage", widget: "image" }
-          - { label: "Hero Image", name: "heroImage", widget: "image" }
-          - label: "Sections"
-            name: "sections"
+          - { label: Title, name: heroImage, widget: image }
+          - { label: Hero Image, name: heroImage, widget: image }
+          - label: Sections
+            name: sections
             widget: list
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "markdown" }
-      - label: "Incentives Page"
-        name: "incentives"
-        file: "content/page/incentives.md"
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: markdown }
+      - label: Incentives Page
+        name: incentives
+        file: content/page/incentives.md
         fields:
-          - { label: "Title", name: "heroImage", widget: "image" }
-          - { label: "Hero Image", name: "heroImage", widget: "image" }
-          - { label: "Description", name: "description", widget: "markdown" }
-          - label: "Contacts"
-            name: "contacts"
+          - { label: Title, name: title, widget: string }
+          - { label: Hero Image, name: heroImage, widget: image }
+          - { label: Description, name: description, widget: markdown }
+          - label: Contacts
+            name: contacts
             widget: list
             fields:
-              - { label: "Type", name: "type", widget: "string" }
-              - { label: "Values", name: "values", widget: "list" }
+              - { label: Type, name: type, widget: string }
+              - label: Values
+                name: values
+                widget: list
+                field: { label: Value, name: value, widget: string }
