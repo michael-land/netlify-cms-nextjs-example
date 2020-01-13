@@ -22,11 +22,8 @@ sections:
       which receive 43% of the box office.
 
 
-      Contact the International Development Division for information &
-      assistance on the process.
-
-
-      Click below for downloadable information.
+      Contact the **International Development Division** for information &
+      assistance on the process. Click below for downloadable information.
     title: international co-productions - china
 contacts:
   - type: phone
