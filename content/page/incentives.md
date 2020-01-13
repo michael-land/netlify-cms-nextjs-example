@@ -24,7 +24,7 @@ sections:
 
       Contact the **International Development Division** for information &
       assistance on the process. Click below for downloadable information.
-    title: international co-productions - china
+    title: international co-productions
 contacts:
   - type: phone
     values:
