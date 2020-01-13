@@ -1,20 +1,17 @@
-import { Anchor, Hero } from "@/components";
+import { Anchor, Hero, Markdown } from "@/components";
 import { GenericProps } from "@/type";
 import {
+  Box,
   Container,
   Grid,
-  List,
-  ListItem,
+  Hidden,
+  IconButton,
   makeStyles,
   SvgIcon,
-  Typography,
-  Divider,
-  IconButton,
-  Box,
-  Hidden
+  Typography
 } from "@material-ui/core";
-import React from "react";
 import clsx from "clsx";
+import React from "react";
 
 const useStyles = makeStyles(theme => ({
   title: {
@@ -51,14 +48,12 @@ const useStyles = makeStyles(theme => ({
 
 interface DetailView extends GenericProps {
   heroImage: string;
-  title: string;
-  description: string;
+  sections: { title: string; description: string }[];
   contacts: { type: string; values: { value: string }[] }[];
 }
 
 const DetailView = React.memo<DetailView>(function DetailView({
-  title,
-  description,
+  sections,
   heroImage,
   contacts,
   children,
@@ -72,10 +67,14 @@ const DetailView = React.memo<DetailView>(function DetailView({
       <Container>
         <Grid container spacing={4}>
           <Grid item xs={12} md={7}>
-            <Typography variant="h4" className={classes.title}>
-              {title}
-            </Typography>
-            <Typography>{description}</Typography>
+            {sections.map(section => (
+              <Box mb={8}>
+                <Typography variant="h4" className={classes.title}>
+                  {section.title}
+                </Typography>
+                <Markdown>{section.description}</Markdown>
+              </Box>
+            ))}
           </Grid>
           <Grid item md={1} implementation="css" smDown component={Hidden} />
           <Grid item xs={12} md={4}>
